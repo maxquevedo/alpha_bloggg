@@ -31,9 +31,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'will_paginate', '3.1.5'
+gem 'will_paginate', '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
+# Adding webpacker for javascript library management
+gem 'webpacker', '~> 4.x'
+
+# React gem for Rails
+gem 'react-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -57,7 +62,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~>0.21'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
